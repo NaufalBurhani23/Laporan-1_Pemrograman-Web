@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id"> <!--artinya bahasa utama halaman ini menggunakan bahasa indonesia-->
+<head> <!-- head menandakan untuk header-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrasi</title> <!-- untuk mengatur judul web yang muncul di tab browser-->
+</head>
+
+<!-- bagian body merupakan bagian utama yang menampilkan konten atau isi yang akan muncul di web-->
+<body>
+    <form> <!--syntax untuk membuat form-->
+        <h1><b>Registrasi Akun </b></h1> <!--judul utama halaman web dan , <b> agar tulisan jadi bold-->
+        <fieldset> <!--digunakan untuk membuat seperti bingkai dalam elemen-->
+            <legend>Formulir Registrasi</legend> <!--untuk memberikan judul dalam fieldset-->
+            <p> <!--untuk menampilkan teks-->
+                <label>Masukkan nama :</label> <!---->
+                <input type="text" name="nama" placeholder="Naufal Burhani"> <!--untuk menampilkan input teks, placeholder untuk menampilkan contoh teks di kotak input-->
+            </p>
+            <p>
+                <label>Masukkan NIM :</label>
+                <input type="text" name="NIM" placeholder="202332004">
+            </p>
+            <p>
+                <label>Masukkan email : </label>
+                <input type="text" name="email" placeholder="naufalburhani2047@gmail.com"> 
+            </p>
+            <p>
+                <label>Jenis Kelamin :</label><br> <!--br digunakan untuk menambahkan spasi-->
+                <input type="radio" name="jenis_kelamin" value="Laki-Laki">Laki-Laki <!--type radio itu seperti input pilihan ganda yang hanya bisa memilih satu opsi-->
+                <input type="radio" name="jenis_kelamin" value="Perempuan">Perempuan  
+            </p>
+            <p>
+                <label>Agama :</label>
+                <select name="Agama">
+                    <!--option merupakan input yang apabila menekan panah bawah berisi opsi" yang bisa dipilih sesuai pilihan-->
+                    <option value="Islam">Islam</option>
+                    <option value="Kristen">Kristen</option>
+                    <option value="Katolik">Katolik</option>
+                    <option value="Hindu">Hindu</option>
+                    <option value="Buddha">Buddha</option>
+                </select>
+            </p>
+            <p>
+                <label>Masukkan password :</label>
+                <input type="text" name="password" placeholder="admin123" required> <!--required berguna agar pengguna wajib mengisi kolom input-->
+            </p>
+            <p>
+                <label>Konfirmasi password:</label>
+                <input type="text" name="Konfirmasi_password" required>
+            </p>
+            <p>
+                <input type="submit" value="Daftar"> <!--untuk mengsubmit semua input ke server-->
+            </p>
+            </fieldset>
+    </form>
+</body>
+</html>
